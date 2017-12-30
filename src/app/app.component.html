@@ -2,7 +2,7 @@
   <div class="hexagon-columns">
     <div class="hexagon-column" *ngFor="let hexagonColumn of hexagons">
       <div class="hexagon-row">
-        <hexagon *ngFor="let hexagon of hexagonColumn" [hexModel]="hexagon"></hexagon>
+        <hexagon (mouseover)="ripple(hexagon)" *ngFor="let hexagon of hexagonColumn" [hexModel]="hexagon"></hexagon>
       </div>
     </div>
   </div>
