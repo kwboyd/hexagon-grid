@@ -39,45 +39,40 @@ export class AppComponent {
     let columnRight = this.hexagons[column-1];
 
     if (currentColumn[row+1]) currentColumn[row+1].startSecond();
-    if (currentColumn[column][row-1]) currentColumn[column][row-1].startSecond(); 
+    if (currentColumn[row-1]) currentColumn[row-1].startSecond(); 
     if (columnLeft) {
       if (columnLeft[row]) columnLeft[row].startSecond();
       if (columnLeft[offset]) columnLeft[offset].startSecond();
     }
     if (columnRight) {
       if (columnRight[row]) columnRight[row].startSecond();
-      if (columnRight[row]) columnRight[offset].startSecond();
+      if (columnRight[offset]) columnRight[offset].startSecond();
     }
 
     let doubleOffset = row;
     let doubleLeftColumn = this.hexagons[column-2];
     let doubleRightColumn = this.hexagons[column+2];    
     if (column % 2 !== 0) doubleOffset = row + 1;    
-    if (this.hexagons[column][row+2]) this.hexagons[column][row+2].startThird();
-    if (this.hexagons[column][row-2]) this.hexagons[column][row-2].startThird(); 
+    if (currentColumn[row+2]) currentColumn[row+2].startThird();
+    if (currentColumn[row-2]) currentColumn[row-2].startThird(); 
     if (columnLeft) {
-
+      if (columnLeft[doubleOffset+1]) columnLeft[doubleOffset + 1].startThird();
+      if (columnLeft[doubleOffset-2]) columnLeft[doubleOffset - 2].startThird();
     }
     if (columnRight) {
-
+      if (columnRight[doubleOffset+1]) columnRight[doubleOffset + 1].startThird();
+      if (columnRight[doubleOffset-2]) columnRight[doubleOffset - 2].startThird();
     }
     if (doubleLeftColumn) {
-
+      if (doubleLeftColumn[row]) doubleLeftColumn[row].startThird();
+      if (doubleLeftColumn[row+1]) doubleLeftColumn[row+1].startThird();
+      if (doubleLeftColumn[row-1]) doubleLeftColumn[row-1].startThird();
     }
     if (doubleRightColumn) {
-
+      if (doubleRightColumn[row]) doubleRightColumn[row].startThird();
+      if (doubleRightColumn[row+1]) doubleRightColumn[row+1].startThird();
+      if (doubleRightColumn[row-1]) doubleRightColumn[row-1].startThird();
     }
-    this.hexagons[column+1][doubleOffset + 1].startThird();
-    this.hexagons[column+1][doubleOffset - 2].startThird();
-    this.hexagons[column-1][doubleOffset + 1].startThird();
-    this.hexagons[column-1][doubleOffset - 2].startThird();
-    this.hexagons[column-2][row].startThird();
-    this.hexagons[column+2][row].startThird();
-    this.hexagons[column+2][row-1].startThird();
-    this.hexagons[column+2][row+1].startThird();
-    this.hexagons[column-2][row+1].startThird();
-    this.hexagons[column-2][row-1].startThird();
-    
-     
+        
   }
 }

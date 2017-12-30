@@ -30,42 +30,42 @@
   }
 
   &.darker {
-    background-color: rgb(30, 87, 128);      
+    background-color: #3390bb;   
     &:before {
-      border-bottom-color: rgb(30, 87, 128);        
+      border-bottom-color: #3390bb;      
     }
     &:after {
-      border-top-color: rgb(30, 87, 128);      
+      border-top-color: #3390bb;   
     }
   }
 
   &.dark {
-    background-color: rgb(80, 149, 202);      
+    background-color: #4fa6cc;    
     &:before {
-      border-bottom-color: rgb(80, 149, 202);        
+      border-bottom-color: #4fa6cc;     
     }
     &:after {
-      border-top-color: rgb(80, 149, 202);        
+      border-top-color: #4fa6cc;   
     }
   }
 
   &.medium {
-    background-color: rgb(129, 183, 224);        
+    background-color: #71B6DB;   
     &:before {
-      border-bottom-color: rgb(129, 183, 224);          
+      border-bottom-color: #71B6DB;            
     }
     &:after {
-      border-top-color: rgb(129, 183, 224);        
+      border-top-color: #71B6DB;          
     }
   }
 
   &.light {
-    background-color: rgb(156, 202, 240);      
+    background-color: #91BEDB;   
     &:before {
-      border-bottom-color: rgb(156, 202, 240);        
+      border-bottom-color: #91BEDB;
     }
     &:after {
-      border-top-color: rgb(156, 202, 240);        
+      border-top-color: #91BEDB
     }
   }
 }
