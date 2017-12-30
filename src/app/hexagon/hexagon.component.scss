@@ -1,0 +1,38 @@
+.hex { 
+  margin-top: 15px;
+  width: 52px;
+  height: 30px;
+  margin-bottom: 9px;
+  margin-left: -5px;
+  // float: left;
+  background-color: #6C6;
+  position: relative;
+  transform: rotate(90deg);  
+  &:before {
+    content: " ";
+    width: 0; height: 0;
+    border-bottom: 15px solid #6C6;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+    position: absolute;
+    top: -15px;
+  }
+  &:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -15px;
+    border-top: 15px solid #6C6;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+  }
+  &.dark {
+    background-color: #3F85BF;      
+    &:before {
+      border-bottom-color: #3F85BF;        
+    }
+    &:after {
+      border-top-color: #3F85BF;        
+    }
+  }
+}

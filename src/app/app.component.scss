@@ -1,0 +1,22 @@
+.hexagon-columns {
+  display: flex;
+  flex-direction: row;
+  width: 40px;
+}
+
+.hexagon-column {
+  &:nth-child(even) {
+    margin-top: 25px;
+  }
+}
+
+.hexagon-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.hexagon-container {
+  overflow: hidden;
+  height: 550px;
+  margin-top: -40px;
+}

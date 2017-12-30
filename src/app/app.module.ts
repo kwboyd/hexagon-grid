@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { HexagonComponent } from './hexagon/hexagon.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HexagonComponent
   ],
   imports: [
     BrowserModule
