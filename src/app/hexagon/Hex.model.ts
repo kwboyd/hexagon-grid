@@ -11,7 +11,7 @@ export class HexModel {
     this.color = 'darker';
     setTimeout(() => {
       this.setSecond();
-    }, 100)
+    }, 300)
   }
 
   startSecond() {
@@ -24,7 +24,7 @@ export class HexModel {
     this.color = 'dark';
     setTimeout(() => {
       this.setThird();
-    }, 200)
+    }, 300)
   }
 
   startThird() {
